@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="あっ、脳トレでもしようっと！">
+	<meta property="og:title" content="ティータイムに脳トレでも？" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://teatimebt51.webcrow.jp/9mass.html" />
+    <meta property="og:image" content="http://teatimebt51.webcrow.jp/images/top.png" />
+    <meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="ティータイムに脳トレでも？" />
+	<meta name="twitter:description" content="あっ、脳トレでもしようっと！" />
+	<meta name="twitter:image" content="http://teatimebt51.webcrow.jp/img/top.png" />
+    <meta name="author" content="">
+	<meta name="keywords" content="ティータイムに脳トレでも？, 脳トレ, ティータイム, Teatime">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+		<title>連続計算</title>
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    	<script type="text/javascript"  src="assets/js/top.js"></script>
+    	<script type="text/javascript"  src="assets/js/calc.js"></script>
+	</head>
+	<body onload="masss()">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong><i class="fa fa-coffee fa-1x" aria-hidden="true"></i> Brain training</strong> at teatime.</a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>連続計算</h1>
+									</header>
+
+									<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>
+									この脳トレは、９マスに上の数字と左の数字を計算した結果を記入するトレーニングです。</p>
+									<header class="major">
+										<h2>問題</h2>
+									</header>
+									<p>下の９マスに数字を埋めてください。</p>
+									<span class="button" onclick="masss()" class="mlc">初級</span>
+									<span class="button" onclick="masst()" class="mlc">中級</span>
+									<span class="button" onclick="massj()" class="mlc">上級</span>
+									<br><br>
+									
+									<div class="table-wrapper">
+									<table border = "1"  class="alt">
+									<tr>
+									<td>
+									<span id="kigou"></span>
+									</td>
+									<td>
+									<span id="a"></span>
+									</td>
+									<td>
+									<span id="b"></span>
+									</td>
+									<td>
+									<span id="c"></span>
+									</td>
+									</tr>
+									<tr>
+									<td>
+									<span id="d"></span>
+									</td>
+									<td>
+									<INPUT type = "number" name="k1" class = "textb">
+									</td>
+									<td>
+									<INPUT type = "number" name="k2" class = "textb">
+									</td>
+									<td>
+									<INPUT type = "number" name="k3" class = "textb">
+									</td>
+									</tr>
+									<tr>
+									<td>
+									<span id="e"></span>
+									</td>
+									<td>
+									<INPUT type = "number" name="k4" class = "textb">
+									</td>
+									<td>
+									<INPUT type = "number" name="k5" class = "textb">
+									</td>
+									<td>
+									<INPUT type = "number" name="k6" class = "textb">
+									</td>
+									</tr>
+									<tr>
+									<td>
+									<span id="f"></span>
+									</td>
+									<td>
+									<INPUT type = "number" name="k7" class = "textb">
+									</td>
+									<td>
+									<INPUT type = "number" name="k8" class = "textb">
+									</td>
+									<td>
+									<INPUT type = "number" name="k9" class = "textb">
+									</td>
+									</tr>
+									</table></div>
+
+
+
+
+									<span class="button" onclick="ans()">答え合わせ</span>
+
+								</section>
+
+							<section id="answer">
+								<div class="inner">
+									<header class="major">
+										<h2>答え</h2>
+									</header>
+									<p>正解は以下です。</p>
+
+									<table border = "1" class="alt">
+									<tr>
+									<td>
+									<span id="kigou1"></span>
+									</td>
+									<td>
+									<span id="a1"></span>
+									</td>
+									<td>
+									<span id="b1"></span>
+									</td>
+									<td>
+									<span id="c1"></span>
+									</td>
+									</tr>
+									<tr>
+									<td>
+									<span id="d1"></span>
+									</td>
+									<td>
+									<span id = "an1"></span>
+									</td>
+									<td>
+									<span id = "an2"></span>
+									</td>
+									<td>
+									<span id = "an3"></span>
+									</td>
+									</tr>
+									<tr>
+									<td>
+									<span id="e1"></span>
+									</td>
+									<td>
+									<span id = "an4"></span>
+									</td>
+									<td>
+									<span id = "an5"></span>
+									</td>
+									<td>
+									<span id = "an6"></span>
+									</td>
+									</tr>
+									<tr>
+									<td>
+									<span id="f1"></span>
+									</td>
+									<td>
+									<span id = "an7"></span>
+									</td>
+									<td>
+									<span id = "an8"></span>
+									</td>
+									<td>
+									<span id = "an9"></span>
+									</td>
+									</tr>
+									</table>
+
+								</div>
+							</section>
+
+							<section id="pdf">
+							<header class="major">
+								<h2>PDF、電子書籍</h2>
+							</header>
+								この計算は、PDFや電子書籍でも配布しています。個人利用の範囲内でご自由にお使いください。<br>（商用利用は禁止とさせていただきます。）<br><br>
+								
+									<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Name</th>
+																	<th>Type</th>
+																	
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>９マス計算（初級）</td>
+																	<td>PDF　電子書籍</td>
+																	
+																</tr>
+																<tr>
+																	<td>９マス計算（中級）</td>
+																	<td>PDF　電子書籍</td>
+																	
+																</tr>
+																<tr>
+																	<td>９マス計算（上級）</td>
+																	<td>PDF　電子書籍</td>
+																
+																</tr>
+																<tr>
+																	<td>９マス計算（＋－×混合、１桁）※</td>
+																	<td>PDF　電子書籍</td>
+																	
+																</tr>
+																<tr>
+																	<td>９マス計算（＋－×混合、２桁）※</td>
+																	<td>PDF　電子書籍</td>
+														
+																</tr>
+																<tr>
+																	<td>９マス計算（＋－×混合、小数点）※</td>
+																	<td>PDF　電子書籍</td>
+														
+																</tr>
+															</tbody>
+														</table>
+														
+										</div>
+						<p>※＋－×混合は、計算シートの中で＋－×が混合されています。難易度が上がっているので、ぜひ挑戦してみてください。</p>
+
+							</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">ＨＯＭＥ</a></li>
+										<li><a href="index.html#appli">このアプリについて</a></li>
+										<li><a href="index.html#mathmenu">脳トレメニュー</a></li>
+										<li><a href="index.html#osusu">こんな人におすすめ</a></li>
+										<li><a href="index.html#rule">利用規約</a></li>
+										<li><a href="index.html#update">更新情報</a></li>
+										<li><a href="index.html#biblio">参考文献</a></li>
+									</ul>
+								</nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<ul class="icons">
+										<li><a href="https://twitter.com/hitoshi2s" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="http://ameblo.jp/hitoshi51l/" class="icon fa-globe"><span class="label">BLOG</span></a></li>
+									</ul>
+									<p class="copyright">&copy; 仁志. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

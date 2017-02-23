@@ -11,3 +11,31 @@ function k1(){
 alert("答えは" + kai + "です。");
 
 }
+
+function k2(){
+
+	var a1, kai;
+	kai = 0;
+	for (var i = 0; i < 5; i++) {
+		a1 = Math.floor(Math.random()*(99-10)+10);
+		alert(a1);
+		kai = kai + a1;
+	}
+
+alert("答えは" + kai + "です。");
+
+}
+
+function k3(){
+
+	var a1, kai;
+	kai = 0;
+	for (var i = 0; i < 5; i++) {
+		a1 = Math.floor(Math.random()*(999-100)+100);
+		alert(a1);
+		kai = kai + a1;
+	}
+
+alert("答えは" + kai + "です。");
+
+}

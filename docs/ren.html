@@ -26,9 +26,9 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     	<script type="text/javascript"  src="assets/js/top.js"></script>
-    	<script type="text/javascript"  src="assets/js/calc.js"></script>
+    	<script type="text/javascript"  src="assets/js/ren.js"></script>
 	</head>
-	<body onload="masss()">
+	<body>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -49,205 +49,18 @@
 									</header>
 
 									<p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>
-									この脳トレは、９マスに上の数字と左の数字を計算した結果を記入するトレーニングです。</p>
+									この脳トレは、５連続で表示される数字を足し合わせるトレーニングです。</p>
 									<header class="major">
 										<h2>問題</h2>
 									</header>
-									<p>下の９マスに数字を埋めてください。</p>
-									<span class="button" onclick="masss()" class="mlc">初級</span>
-									<span class="button" onclick="masst()" class="mlc">中級</span>
-									<span class="button" onclick="massj()" class="mlc">上級</span>
+									<p>ボタンを押すとスタートします。</p>
+									<span class="button" onclick="k1()" class="mlc">１桁</span>
+									<span class="button" onclick="k2()" class="mlc">２桁</span>
+									<span class="button" onclick="k3()" class="mlc">３桁</span>
 									<br><br>
-									
-									<div class="table-wrapper">
-									<table border = "1"  class="alt">
-									<tr>
-									<td>
-									<span id="kigou"></span>
-									</td>
-									<td>
-									<span id="a"></span>
-									</td>
-									<td>
-									<span id="b"></span>
-									</td>
-									<td>
-									<span id="c"></span>
-									</td>
-									</tr>
-									<tr>
-									<td>
-									<span id="d"></span>
-									</td>
-									<td>
-									<INPUT type = "number" name="k1" class = "textb">
-									</td>
-									<td>
-									<INPUT type = "number" name="k2" class = "textb">
-									</td>
-									<td>
-									<INPUT type = "number" name="k3" class = "textb">
-									</td>
-									</tr>
-									<tr>
-									<td>
-									<span id="e"></span>
-									</td>
-									<td>
-									<INPUT type = "number" name="k4" class = "textb">
-									</td>
-									<td>
-									<INPUT type = "number" name="k5" class = "textb">
-									</td>
-									<td>
-									<INPUT type = "number" name="k6" class = "textb">
-									</td>
-									</tr>
-									<tr>
-									<td>
-									<span id="f"></span>
-									</td>
-									<td>
-									<INPUT type = "number" name="k7" class = "textb">
-									</td>
-									<td>
-									<INPUT type = "number" name="k8" class = "textb">
-									</td>
-									<td>
-									<INPUT type = "number" name="k9" class = "textb">
-									</td>
-									</tr>
-									</table></div>
-
-
-
-
-									<span class="button" onclick="ans()">答え合わせ</span>
-
+	
 								</section>
 
-							<section id="answer">
-								<div class="inner">
-									<header class="major">
-										<h2>答え</h2>
-									</header>
-									<p>正解は以下です。</p>
-
-									<table border = "1" class="alt">
-									<tr>
-									<td>
-									<span id="kigou1"></span>
-									</td>
-									<td>
-									<span id="a1"></span>
-									</td>
-									<td>
-									<span id="b1"></span>
-									</td>
-									<td>
-									<span id="c1"></span>
-									</td>
-									</tr>
-									<tr>
-									<td>
-									<span id="d1"></span>
-									</td>
-									<td>
-									<span id = "an1"></span>
-									</td>
-									<td>
-									<span id = "an2"></span>
-									</td>
-									<td>
-									<span id = "an3"></span>
-									</td>
-									</tr>
-									<tr>
-									<td>
-									<span id="e1"></span>
-									</td>
-									<td>
-									<span id = "an4"></span>
-									</td>
-									<td>
-									<span id = "an5"></span>
-									</td>
-									<td>
-									<span id = "an6"></span>
-									</td>
-									</tr>
-									<tr>
-									<td>
-									<span id="f1"></span>
-									</td>
-									<td>
-									<span id = "an7"></span>
-									</td>
-									<td>
-									<span id = "an8"></span>
-									</td>
-									<td>
-									<span id = "an9"></span>
-									</td>
-									</tr>
-									</table>
-
-								</div>
-							</section>
-
-							<section id="pdf">
-							<header class="major">
-								<h2>PDF、電子書籍</h2>
-							</header>
-								この計算は、PDFや電子書籍でも配布しています。個人利用の範囲内でご自由にお使いください。<br>（商用利用は禁止とさせていただきます。）<br><br>
-								
-									<div class="table-wrapper">
-														<table class="alt">
-															<thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Type</th>
-																	
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>９マス計算（初級）</td>
-																	<td>PDF　電子書籍</td>
-																	
-																</tr>
-																<tr>
-																	<td>９マス計算（中級）</td>
-																	<td>PDF　電子書籍</td>
-																	
-																</tr>
-																<tr>
-																	<td>９マス計算（上級）</td>
-																	<td>PDF　電子書籍</td>
-																
-																</tr>
-																<tr>
-																	<td>９マス計算（＋－×混合、１桁）※</td>
-																	<td>PDF　電子書籍</td>
-																	
-																</tr>
-																<tr>
-																	<td>９マス計算（＋－×混合、２桁）※</td>
-																	<td>PDF　電子書籍</td>
-														
-																</tr>
-																<tr>
-																	<td>９マス計算（＋－×混合、小数点）※</td>
-																	<td>PDF　電子書籍</td>
-														
-																</tr>
-															</tbody>
-														</table>
-														
-										</div>
-						<p>※＋－×混合は、計算シートの中で＋－×が混合されています。難易度が上がっているので、ぜひ挑戦してみてください。</p>
-
-							</section>
 						</div>
 					</div>
 

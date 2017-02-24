@@ -7,9 +7,16 @@ function k1(){
 		alert(a1);
 		kai = kai + a1;
 	}
-
-alert("答えは" + kai + "です。");
-
+	
+	var ans;
+		ans = window.prompt("答えは？","");
+		
+		if (ans == kai){
+			alert("正解です！");
+		}
+		else{
+			alert("残念。答えは" + kai + "です。");
+		}
 }
 
 function k2(){
@@ -22,7 +29,15 @@ function k2(){
 		kai = kai + a1;
 	}
 
-alert("答えは" + kai + "です。");
+	var ans;
+		ans = window.prompt("答えは？","");
+		
+		if (ans == kai){
+			alert("正解です！");
+		}
+		else{
+			alert("残念。答えは" + kai + "です。");
+		}
 
 }
 
@@ -36,6 +51,14 @@ function k3(){
 		kai = kai + a1;
 	}
 
-alert("答えは" + kai + "です。");
+	var ans;
+		ans = window.prompt("答えは？","");
+		
+		if (ans == kai){
+			alert("正解です！");
+		}
+		else{
+			alert("残念。答えは" + kai + "です。");
+		}
 
 }

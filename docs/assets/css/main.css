@@ -1,5 +1,4 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
 /*
 	Editorial by HTML5 UP
@@ -4084,4 +4083,8 @@
 
 	font-size: 2em;
 
+}
+
+#mon, #color{
+	font-size: 4em;
 }

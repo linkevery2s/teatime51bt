@@ -4080,11 +4080,13 @@
 }
 
 .moji{
-
 	font-size: 2em;
-
 }
 
-#mon, #color{
-	font-size: 4em;
+#mon{
+	font-size: 3em;
+}
+
+#toi, #kbun{
+	font-size: 2em;
 }

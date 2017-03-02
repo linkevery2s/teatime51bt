@@ -1,12 +1,15 @@
+function syoki(){$("#toi").hide();$("#kbun").hide();}
 
-function zukei(){
-
+function zukei1(){
+	$("#mon").show();
+	$("#toi").hide();
+	$("#kbun").hide();
 	var zukei = ['●', '◎', '▲', '■', '◆', '▼', '★'];
 		
-	var color = ['#808080', '#0000FF', '#008000', '#00FFFF', '#FF00FF', '#808000', '#800080', '#800000', '#00CCFF', '#3300FF', '#FF3300', '#550000', '#FF5F17', '#9932CC', '#D2691E', '#7CFC00', '#AFEEEE', '#DC143C', '#DC143C', '#FF1A6F', '#00FF3B', '#CC00FF', '#CC9966', '#FF9966', '#FF9900', '#000000'];
+	var color = ['#000000', '#0000FF', '#00FF00', '#00FFFF', '#FFFF00', '#FF0000', '#FF00FF'];
 
-	var zk = shuffle(zukei);
-	var cl = shuffle(color);
+	var zk = shuf(zukei);
+	var cl = shuf(color);
 
 	for (var i = 1; i < 8; i++) {
 		document.getElementById("z" + i).innerHTML = zk[i-1];
@@ -14,10 +17,70 @@ function zukei(){
 	}
 	
 	var a = Math.floor(Math.random()*(7-0));
-		document.getElementById("color").style.color = color[a];
+	document.getElementById("color").style.color = color[a];
+	
+	setTimeout(countup, 3000);
+
+	document.getElementById("kai").innerHTML = zk[a];
+	document.getElementById("kai").style.color = color[a];
 }
 
-function shuffle(array) {
+function zukei2(){
+	$("#mon").show();
+	$("#toi").hide();
+	$("#kbun").hide();
+	var zukei = ['●', '◎', '▲', '■', '◆', '▼', '★'];
+		
+	var color = ['#000000', '#0000FF', '#00FF00', '#00FFFF', '#FFFF00', '#FF0000', '#FF00FF'];
+
+	var zk = shuf(zukei);
+	var cl = shuf(color);
+
+	for (var i = 1; i < 8; i++) {
+		document.getElementById("z" + i).innerHTML = zk[i-1];
+		document.getElementById("z" + i).style.color = color[i-1];
+	}
+	
+	var a = Math.floor(Math.random()*(7-0));
+	document.getElementById("color").style.color = color[a];
+	
+	setTimeout(countup, 1500);
+
+	document.getElementById("kai").innerHTML = zk[a];
+	document.getElementById("kai").style.color = color[a];
+}
+
+function zukei3(){
+	$("#mon").show();
+	$("#toi").hide();
+	$("#kbun").hide();
+	var zukei = ['●', '◎', '▲', '■', '◆', '▼', '★'];
+		
+	var color = ['#000000', '#0000FF', '#00FF00', '#00FFFF', '#FFFF00', '#FF0000', '#FF00FF'];
+
+	var zk = shuf(zukei);
+	var cl = shuf(color);
+
+	for (var i = 1; i < 8; i++) {
+		document.getElementById("z" + i).innerHTML = zk[i-1];
+		document.getElementById("z" + i).style.color = color[i-1];
+	}
+	
+	var a = Math.floor(Math.random()*(7-0));
+	document.getElementById("color").style.color = color[a];
+	
+	setTimeout(countup, 500);
+
+	document.getElementById("kai").innerHTML = zk[a];
+	document.getElementById("kai").style.color = color[a];
+}
+
+function countup(){
+	$("#mon").hide();
+	$("#toi").show();
+}
+
+function shuf(array) {
   var n = array.length, t, i;
 
   while (n) {
@@ -28,4 +91,8 @@ function shuffle(array) {
   }
 
   return array;
+}
+
+function ans(){
+	$("#kbun").show();
 }
